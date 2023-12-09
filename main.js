@@ -43,6 +43,7 @@ while (ulang) {
       alert("angka anda tinggi");
     }
   } else if (percobaan <= kesempatan) {
+    alert("jawaban anda salah");
     alert("kesempatan anda habis"), (ulang = false);
   } else {
     alert("ada masalah");
