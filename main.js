@@ -6,9 +6,9 @@ var batasAngka = 10;
 
 var com = Math.random();
 
-if (com < 0.1) {
+if (com < 0.2) {
   com = 1;
-} else if (com >= 0.15 && com < 0.24) {
+} else if (com >= 0.2 && com < 0.24) {
   com = 2;
 } else if (com >= 0.24 && com < 0.25) {
   com = 3;
@@ -38,10 +38,12 @@ while (ulang) {
     } else if (p < com) {
       alert("angka anda rendah");
     } else if (p > batasAngka) {
-      alert("anda memasukkan angka diluar 1-10");
+      alert("anda memasukkan angka diatas 10");
     } else {
       alert("angka anda tinggi");
     }
+  } else if (p == com) {
+    alert("jawaban anda " + hasil), (ulang = false);
   } else if (percobaan <= kesempatan) {
     alert("jawaban anda salah");
     alert("kesempatan anda habis"), (ulang = false);
@@ -51,5 +53,4 @@ while (ulang) {
 }
 
 alert("angka yang dicari adalah " + com);
-
 alert("terimakasih sudah bermain");
