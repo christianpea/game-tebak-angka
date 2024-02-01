@@ -1,10 +1,10 @@
 alert("Ayo bermain tebak angka\n 1 - 10");
-var ulang = true;
-var percobaan = 0;
-var kesempatan = 3;
-var batasAngka = 10;
+let ulang = true;
+let percobaan = 0;
+let kesempatan = 3;
+const batasAngka = 10;
 
-var com = Math.random();
+let com = Math.random();
 
 if (com < 0.2) {
   com = 1;
@@ -29,8 +29,8 @@ if (com < 0.2) {
 }
 
 while (ulang) {
-  var hasil = "benar";
-  var p = prompt("masukan angka 1 - 10 \n anda memiliki " + kesempatan-- + " kesempatan");
+  const hasil = "benar";
+  let p = prompt("masukan angka 1 - 10 \n anda memiliki " + kesempatan-- + " kesempatan");
 
   if (percobaan < kesempatan) {
     if (p == com) {
